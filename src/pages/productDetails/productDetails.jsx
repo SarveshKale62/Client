@@ -4,6 +4,21 @@ import { ShopContext } from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
 import "./productDetails.css";
 
+const PRODUCTS = [
+  {
+    id: 1,
+    description: 'Anti-Dust, 2 Way Stretch, Comfort Stretch, Ankle Length',
+  },
+  {
+    id: 2,
+    description: 'Description for Product 2. Some other features...',
+  },
+  // Add similar entries for other products
+];
+
+// ... rest of the code remains the same ...
+
+
 export const ProductDetails = () => {
   const { id } = useParams();
   const { addToCart, cartItems } = useContext(ShopContext);
@@ -32,10 +47,7 @@ export const ProductDetails = () => {
           <p><b>ID:</b> {id}</p>
           <p><b>Price:</b> ${price}</p>
           <p><b>Description:</b></p>
-          <p>Anti-Dust, 
-             2 Way Stretch, 
-             Comfort Stretch,
-             Ankle Length</p>
+          <p>{description}</p>
             <button className="addToCartBttn" onClick={() => addToCart(id)}>
               Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
             </button>
