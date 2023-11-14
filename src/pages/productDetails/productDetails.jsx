@@ -4,7 +4,7 @@ import { ShopContext } from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
 import "./productDetails.css";
 
-const PRODUCTS = [
+const Product_description = [
   {
     id: 1,
     description: 'Anti-Dust, 2 Way Stretch, Comfort Stretch, Ankle Length',
@@ -34,7 +34,7 @@ export const ProductDetails = () => {
   }
 
   // If the product exists, render its details
-  const { productName, description, productImage, price } = product;
+  const { productName, productImage, price } = product;
 
   return (
     <div className="product-container">
