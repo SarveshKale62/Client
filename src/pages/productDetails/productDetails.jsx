@@ -32,10 +32,10 @@ export const ProductDetails = () => {
           <p><b>ID:</b> {id}</p>
           <p><b>Price:</b> ${price}</p>
           <p><b>Description:</b></p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Quis perspiciatis voluptates possimus, sit necessitatibus in omnis 
-            aut praesentium aspernatur id neque voluptatibus perferendis repellat, 
-            pariatur esse fuga, voluptas sequi numquam!</p>
+          <p>Anti-Dust, 
+             2 Way Stretch, 
+             Comfort Stretch,
+             Ankle Length</p>
             <button className="addToCartBttn" onClick={() => addToCart(id)}>
               Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
             </button>
