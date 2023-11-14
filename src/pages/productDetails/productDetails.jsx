@@ -4,20 +4,6 @@ import { ShopContext } from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
 import "./productDetails.css";
 
-const Product_description = [
-  {
-    id: 1,
-    description: 'Anti-Dust, 2 Way Stretch, Comfort Stretch, Ankle Length',
-  },
-  {
-    id: 2,
-    description: 'Description for Product 2. Some other features...',
-  },
-  // Add similar entries for other products
-];
-
-// ... rest of the code remains the same ...
-
 
 export const ProductDetails = () => {
   const { id } = useParams();
@@ -34,7 +20,7 @@ export const ProductDetails = () => {
   }
 
   // If the product exists, render its details
-  const { productName, productImage, price } = product;
+  const { productName, description,productImage, price } = product;
 
   return (
     <div className="product-container">
